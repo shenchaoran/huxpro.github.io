@@ -6,6 +6,7 @@ date:       2015-12-15
 author:     "Hux"
 header-img: "img/post-bg-ios9-web.jpg"
 catalog:    true
+comments: true
 tags:
     - 前端开发
     - JavaScript

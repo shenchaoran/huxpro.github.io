@@ -10,14 +10,18 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 
 
+
 # SNS settings
 RSS: false
-weibo_username:     看不见的天涯Oo
+weibo_username:     3024595743
 zhihu_username:     chaoran212
 github_username:    shenchaoran
-twitter_username:   shenchaoran
+#twitter_username:   shenchaoran
+oschina_username:   linc212
+lofter_username:    http://15651907312.lofter.com/
+netease_username:    42749845
 #facebook_username:  shenchaoran
-# linkedin_username:  firstname-lastname-idxxxx
+#linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -48,10 +52,10 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: shenchaoran
+disqus_username: https-shenchaoran-github-io
 
 # Netease setttings
-netease_comment: false
+netease_comment: true
 
 
 
@@ -87,37 +91,22 @@ service-worker: true
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "liyaoli",
         href: "http://www.liyaoli.com/"
     },{
         title: "Photography",
         href: "http://15651907312.lofter.com/"
     },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
+        title: "OpenGMS",
+        href: "http://geomodeling.njnu.edu.cn/GeoModeling/En/home/index.html"
     },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
+        title: "Model Integration",
+        href: "http://172.21.213.146:9990/integration/solution/query"
     },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
+        title: "Model service container",
+        href: "http://172.21.213.146:8060/index"
     },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
+        title: "Data service container",
+        href: "http://172.21.212.85:8899"
     }
 ]
