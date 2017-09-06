@@ -1,12 +1,12 @@
 ---
+layout: post
 title: TypeScript
-tags: [TypeScript]
+subtitle: ""
+tags: TypeScript
 notebook: 城方实习
 ---
 
 [TOC]
-
----
 
 ### 数据类型
 - boolean
