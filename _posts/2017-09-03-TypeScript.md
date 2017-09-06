@@ -1,16 +1,13 @@
 ---
-layout:     post
-author:     "SCR"
-header-img: "img/post-bg-2015.jpg"
-catalog: true
-tags:
-    - TypeScript
-    - 城方实习
+title: TypeScript
+tags: [TypeScript]
+notebook: 城方实习
 ---
 
-## TypeScript
+[TOC]
 
-------------------------
+---
+
 ### 数据类型
 - boolean
 - number， 
