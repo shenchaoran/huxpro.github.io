@@ -1,10 +1,14 @@
+---
+layout:     post
+author:     "SCR"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - TypeScript
+    - 城方实习
+---
 
-
-##TypeScript
-
-@(城方实习)[TypeScript]
-
-[toc]
+## TypeScript
 
 ------------------------
 ### 数据类型
