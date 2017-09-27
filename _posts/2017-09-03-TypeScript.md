@@ -86,11 +86,11 @@ pet.swim();    // errors
 - &lt;ClassName&gt; ObjectName
 
 ### 变量声明
-####let
+#### let
 与var相比，解决的问题：
 - 块级作用域
 - for循环中异步函数调用时只能掉到最后一个
-####const
+#### const
 只读
 #### 解构
 #### 展开
@@ -272,9 +272,9 @@ function area(shape : Shape) {
 console.log( area( {name: "rectangle", width: 30, height: 15} ) );
 console.log( area( {name: "square", width: 30, height: 30, color: "blue"} ) );
 ```
-**可选属性**
-**只读属性**
-**索引签名**：接口可包含一个可索引的属性，这个属性包含两部分，第一部分时索引签名的类型，第二部分时索引返回值的类型。索引签名支持两种：字符串和数字
+- **可选属性**
+- **只读属性**
+- **索引签名**：接口可包含一个可索引的属性，这个属性包含两部分，第一部分时索引签名的类型，第二部分时索引返回值的类型。索引签名支持两种：字符串和数字
 #### 泛型
 ```typescript
 function identity<T>(arg: T): T {
@@ -311,3 +311,12 @@ function add(x: number, y: number): number {
 let myAdd = function(x: number, y: number): number { return x + y; };
 ```
 #### 模块
+#### 声明语句
+在js中，假如我们想使用jQuery，会直接用`$('#id')`，但是在ts中，编译器并不知道`$`是什么意思，所以要提前声明。
+```typescript
+declare var jQuery: (string) => any;
+jQuery('#foo');
+```
+声明只是编译时用来类型检查的，在编译结果中会被删除。
+#### 声明文件
+通常我们将类型声明放到一个单独的文件中，以`.d.ts`后缀名。
