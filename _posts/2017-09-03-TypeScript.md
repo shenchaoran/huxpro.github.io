@@ -1,6 +1,5 @@
 ---
 layout: post
-title: TypeScript
 subtitle: ""
 tags: TypeScript
 notebook: 城方实习
