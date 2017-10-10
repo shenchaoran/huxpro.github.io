@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: 
-    - angular
+    - Angular
     - 异步
 notebook: 城方实习
 catalog: true
