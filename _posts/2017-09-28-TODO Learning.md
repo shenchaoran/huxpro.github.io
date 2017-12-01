@@ -12,3 +12,9 @@ RxJS:
 
 NodeJS: 
     像angular一样使用依赖注入
+
+angular native
+
+小程序
+
+JSON-server: restful
