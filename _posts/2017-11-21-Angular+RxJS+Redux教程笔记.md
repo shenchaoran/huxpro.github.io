@@ -94,15 +94,15 @@ catalog: true
 #### 指令详解
 
 - ng-container: 在渲染时是什么都没有的。比如如下代码，.flex下面的三个div具有相同的地位。
-```
-<div class="flex">
-  <div></div>
-  <ng-container>
+    ``` html
+    <div class="flex">
     <div></div>
-    <div></div>
-  </ng-container>
-</div>
-```
+    <ng-container>
+        <div></div>
+        <div></div>
+    </ng-container>
+    </div>
+    ```
 
 - `:host`：用在css里，指宿主元素。即组件的元数据中的selector的名字包装的那一层，如`<app-visual-list>...</app-visual-list>`
 
@@ -111,7 +111,7 @@ catalog: true
 #### 类装饰器
 
 - `@NgModule`
-    #### 元数据
+    **元数据**
     - `imports`: 
     - `providers`:
     - `bootstrap`:
