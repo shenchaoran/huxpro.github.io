@@ -11,8 +11,8 @@ catalog: true
 ---
 
 - 下载文件时返回的是Buffer
-    fs.readFile默认的options中的encoding是null，不是utf8！返回的data可能是string和Buffer，未指定编码时返回Buffer。
-    坑爹的是：fs.writeFile默认的options中的encoding是utf8！两者竟然不一致 :(
+    fs.readFile默认的options中的encoding是**null**，不是utf8！返回的data可能是string和Buffer，未指定编码时返回Buffer。
+    坑爹的是：fs.writeFile默认的options中的encoding是**utf8**！两者竟然不一致 :(
 ``` typescript
 ...
 fs.readFile(fpath, (err, buf) => {
