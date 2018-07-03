@@ -1,10 +1,8 @@
 瞎想：
 
 css:
-    flex
     grid
     float
-    竖直占满剩余高度
     弹性布局 fr 
 RxJS:
 
@@ -17,4 +15,5 @@ angular native
 
 小程序
 
-JSON-server: restful
+服务器：
+    海外服务器加ShadowSocks搭建VPN
