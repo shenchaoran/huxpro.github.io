@@ -1,19 +1,22 @@
-瞎想：
-
-css:
-    grid
-    float
-    弹性布局 fr 
-RxJS:
-
-@types:
-
-NodeJS: 
-    像angular一样使用依赖注入
-
-angular native
-
-小程序
-
-服务器：
-    海外服务器加ShadowSocks搭建VPN
+- [ ] css:
+    - [ ] grid
+    - [ ] flex
+    - [ ] table
+    - [ ] float
+    - [ ] 布局
+- [ ]JS
+    - [ ] Web API
+    - [ ] 正则表达式
+    - [ ] jQuery源码
+- [ ] HTML
+    - [ ] H5
+- [ ] RxJS:
+- [ ] @types:
+- [ ] NodeJS: 
+    - [ ] 像angular一样使用依赖注入
+- [ ] angular native
+- [ ] 微信小程序
+- [ ] 服务器：
+    - [x] VPS加ShadowSocks搭建VPN
+    - [ ] 部署自己的项目
+    - [ ] 整理github的项目 ReadMe 文档，最好给一个在线应用的链接。
