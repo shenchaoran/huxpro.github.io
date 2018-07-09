@@ -1,7 +1,7 @@
 # Site settings
 title: Shen Chaoran
 SEOTitle: 沈超然的博客 | ShenChaoran's Blog
-header-img: img/home-bg.jpg
+header-img: img/bgs/home-gb.jpg
 email: shenchaoran212@gmail.com
 description: "学习笔记"
 keyword: "沈超然 分布式地理建模平台 模型集成 nodejs"
