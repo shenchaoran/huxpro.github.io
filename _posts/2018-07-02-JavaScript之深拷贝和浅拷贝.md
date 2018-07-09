@@ -5,9 +5,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # 例子
 ```js

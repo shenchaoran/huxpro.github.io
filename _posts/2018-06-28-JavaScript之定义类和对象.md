@@ -5,9 +5,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # 工厂方式
 ``` javascript

@@ -5,10 +5,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
-
 2018-07-08 - 2018-07-31: 
 - [ ] css:
     - [ ] grid

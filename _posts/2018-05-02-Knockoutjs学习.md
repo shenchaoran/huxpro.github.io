@@ -6,9 +6,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # MVVM
 

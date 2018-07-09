@@ -7,9 +7,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # js 中的堆内存和栈内存
 首先JavaScript中的变量分为基本类型和引用类型。

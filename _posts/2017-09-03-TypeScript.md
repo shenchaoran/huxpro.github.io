@@ -7,7 +7,6 @@ notebook: 城方实习
 catalog: true
 ---
 
-[TOC]
 
 # 数据类型
 - boolean

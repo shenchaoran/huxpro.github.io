@@ -6,9 +6,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # 原生方法
 1. 在html中使用 onclick 绑定

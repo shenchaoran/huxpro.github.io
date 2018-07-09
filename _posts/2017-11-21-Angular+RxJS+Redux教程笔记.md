@@ -7,9 +7,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 ## @angular/cli
 

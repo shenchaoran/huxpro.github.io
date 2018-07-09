@@ -6,9 +6,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 构造函数、实例对象、原型对象三者的关系通过 __proto__, prototype, new 关联
 ![js原型链](../img/in-post/js原型链.jpg)

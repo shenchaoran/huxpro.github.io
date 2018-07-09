@@ -6,9 +6,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 ### 程序组织结构
 

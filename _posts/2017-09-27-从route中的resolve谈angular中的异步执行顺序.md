@@ -7,9 +7,6 @@ notebook: 城方实习
 catalog: true
 ---
 
-[TOC]
-
----
 
 ### 预加载数据 Resolve
 在初始化组件之前可能需要先准备好视图模型所需的数据，此时可以在路由中使用resolve预加载数据。

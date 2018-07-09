@@ -6,9 +6,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # 整体架构
 ## jQuery对象的构建方式

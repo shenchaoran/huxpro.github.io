@@ -6,7 +6,4 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 

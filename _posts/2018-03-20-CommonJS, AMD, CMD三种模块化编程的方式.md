@@ -9,9 +9,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # CommonJS
 

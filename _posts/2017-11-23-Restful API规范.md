@@ -5,9 +5,6 @@ tags:
 catalog: true
 ---
 
-[TOC]
-
----
 
 # 复数路由
 
