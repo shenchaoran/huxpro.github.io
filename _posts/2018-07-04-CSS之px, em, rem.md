@@ -1,3 +1,15 @@
+---
+layout: post
+tags: 
+    - CSS
+    - 单位
+catalog: true
+---
+
+[TOC]
+
+---
+
 # px
 `px` 是一个虚拟长度单位，是计算机系统的数字化图像长度单位，如果 px 要换算成物理长度，需要指定精度 `DPI(Dots Per Inch，每英寸像素数)`，在扫描打印时一般都有DPI可选。Windows系统默认是96dpi，Apple系统默认是72dpi。
 
@@ -12,3 +24,4 @@
 # 参考
 [CSS 单位 px rem em](https://segmentfault.com/a/1190000010623222)<br>
 [在线单位转换工具](http://pxtoem.com/)
+[在线示例](https://codepen.io/tutsplus/pen/bdxWbB)

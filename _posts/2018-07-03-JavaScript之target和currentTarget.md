@@ -1,3 +1,15 @@
+---
+layout: post
+tags: 
+    - JavaScript
+    - event
+catalog: true
+---
+
+[TOC]
+
+---
+
 读定义总是很绕，要彻底了解这两者的区别，我们要先了解浏览器中事件传递的机制冒泡和捕获。
 
 # 冒泡和捕获

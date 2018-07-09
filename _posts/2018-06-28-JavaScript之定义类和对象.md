@@ -1,7 +1,6 @@
 ---
 layout: post
 tags: 
-    - 面试准备
     - JavaScript
 catalog: true
 ---

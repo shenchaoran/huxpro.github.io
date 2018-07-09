@@ -1,3 +1,14 @@
+---
+layout: post
+tags: 
+    - JavaScript
+catalog: true
+---
+
+[TOC]
+
+---
+
 # 例子
 ```js
 var obj1 = {name:'bangbang',age:18};

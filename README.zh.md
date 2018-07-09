@@ -1,3 +1,6 @@
+# Bugs
+- 编码问题：标题中文无法识别，参考[这里](https://blog.csdn.net/yinaoxiong/article/details/54025482)
+
 # Hux blog 模板
 
 ### [我的博客在这里 &rarr;](http://huxpro.github.io)

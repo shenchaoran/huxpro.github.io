@@ -1,3 +1,14 @@
+---
+layout: post
+tags: 
+    - JavaScript
+    - Immutable
+catalog: true
+---
+
+[TOC]
+
+---
 
 # 参考
 [JavaScript中的不可变性(Immutability)](https://segmentfault.com/a/1190000004906518)<br>

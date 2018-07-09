@@ -1,3 +1,14 @@
+---
+layout: post
+tags: 
+    - JavaScript
+    - 闭包
+catalog: true
+---
+
+[TOC]
+
+---
 
 # 闭包
 在一些编程语言中，函数中的局部变量仅在函数的执行期间可用。但是在 js 中使用闭包并非如此。

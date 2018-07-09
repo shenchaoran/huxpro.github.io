@@ -1,10 +1,14 @@
 ---
 layout: post
 tags: 
-    - 浏览器兼容
+    - JavaScript
+    - ES6
 catalog: true
 ---
 
 [TOC]
 
 ---
+
+# let 和 const
+

@@ -1,3 +1,16 @@
+---
+layout: post
+tags: 
+    - JavaScript
+    - 堆和栈
+    - 内存
+catalog: true
+---
+
+[TOC]
+
+---
+
 # js 中的堆内存和栈内存
 首先JavaScript中的变量分为基本类型和引用类型。
 - 基本类型就是保存在栈内存中的简单数据段

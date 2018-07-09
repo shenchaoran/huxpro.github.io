@@ -1,3 +1,15 @@
+---
+layout: post
+tags: 
+    - JavaScript
+    - jQuery
+catalog: true
+---
+
+[TOC]
+
+---
+
 # 整体架构
 ## jQuery对象的构建方式
 ``` js

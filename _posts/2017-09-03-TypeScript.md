@@ -1,7 +1,8 @@
 ---
 layout: post
 subtitle: ""
-tags: TypeScript
+tags: 
+    - TypeScript
 notebook: 城方实习
 catalog: true
 ---
