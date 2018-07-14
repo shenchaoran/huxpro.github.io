@@ -28,3 +28,7 @@ catalog: true
     - [x] VPS加ShadowSocks搭建VPN
     - [ ] 部署自己的项目
     - [ ] 整理github的项目 ReadMe 文档，最好给一个在线应用的链接。
+- [ ] 前沿技术
+    - [ ] webRtc
+    - [ ] graphql
+    - [ ] webSocket
