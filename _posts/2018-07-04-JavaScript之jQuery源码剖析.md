@@ -40,7 +40,7 @@ aQuery.prototype.init.prototype = aQuery.prototype;
         // 实例化化方法，这个方法可以称作 jQuery 对象构造器
         init: function(selector, context, rootjQuery) {
             // ...
-            //return this;
+            return this;
         }
     }
     // 这一句很关键，也很绕

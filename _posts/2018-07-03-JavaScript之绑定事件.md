@@ -59,6 +59,7 @@ $('#root').delegate('a', 'click', function(){
 绑定的事件只会触发一次。
 
 # on(type,[selector],[data],fn)
+使用 $(dom).trigger('eventName') 触发
 事实上，`.on()` 才是jQuery事件的提供者。其他的事件绑定方法都是通过`.on()`来实现的，请看jQuery1.8.2的源码：
 ``` js
 bind: function( types, data, fn ) {

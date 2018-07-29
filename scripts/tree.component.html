@@ -1,0 +1,141 @@
+<style>
+    #tree-target {
+        position: relative;
+    }
+    .tree-node-open>div {
+        display: block;
+    }
+    .tree-node-close>div {
+        display: none;
+    }
+</style>
+
+<div id='tree-target'></div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<script>
+    let tree = [{
+            id: '1',
+            open: false,
+            withCheckbox: true,
+            name: '111',
+            value: {
+                text: 'sss'
+            },
+            children: [{
+                    id: '222',
+                    open: false,
+                    withCheckbox: true,
+                    name: '333',
+                    value: {
+                        text: 'qqq'
+                    }
+                },
+                {
+                    id: '222',
+                    open: false,
+                    withCheckbox: true,
+                    name: '333',
+                    value: {
+                        text: 'qqq'
+                    },
+                    children: [{
+                        id: '222',
+                        open: false,
+                        withCheckbox: true,
+                        name: '333',
+                        value: {
+                            text: 'qqq'
+                        }
+                    }, {
+                        id: '222',
+                        open: false,
+                        withCheckbox: true,
+                        name: '333',
+                        value: {
+                            text: 'qqq'
+                        }
+                    }]
+                },
+                {
+                    id: '222',
+                    open: false,
+                    withCheckbox: true,
+                    name: '333',
+                    value: {
+                        text: 'qqq'
+                    }
+                }, {
+                    id: '222',
+                    open: false,
+                    withCheckbox: true,
+                    name: '333',
+                    value: {
+                        text: 'qqq'
+                    }
+                }
+            ]
+        },
+        {
+            id: '2',
+            open: false,
+            withCheckbox: true,
+            name: '222',
+            value: {
+                text: 'qqq'
+            }
+        }
+    ];
+
+    function createNode(obj, level, $parent) {
+        // TODO 怎么双向绑定
+        let node = $(
+            `<div id='${obj.id}' class='tree-node tree-level-${level} tree-node-${obj.open? "open": "close"}'>
+                ${(obj.children && obj.children.length)? 
+                    '<span onclick="toggleOpenDiv(this,"' + obj + '")">' + obj.open? '^': 'v'  + '</span>': 
+                    '<span> </span>'}
+                ${obj.withCheckbox? '<input type="checkbox" onclick="onChecked(this)"/>': '  '}
+                <span>${obj.name}</span>        
+            </div>`
+        )
+        if (obj.children && obj.children.length) {
+            for (let item of obj.children) {
+                createNode(item, level + 1, node)
+            }
+        }
+        $parent.append(node)
+    }
+
+    function toggleOpenDiv(e, obj) {
+
+        let addClass = 'tree-node-' + obj.open? 'open': 'close'
+        let removeClass = 'tree-node-' + obj.open? 'close': 'open'
+        $(e).parent().removeClass(removeClass)
+        $(e).parent().addClass(addClass)
+    }
+
+    function onChecked(e) {
+        let currentChecked = $(e).is(':checked')
+        for(let item of $(e).parent().find('input')) {
+            item.checked = currentChecked
+        }
+    }
+
+    for (let item of tree) {
+        createNode(item, 1, $('#tree-target'))
+    }
+
+    $('html').append(
+        `<style>
+        .tree-node {
+            position: relative;
+            margin-left: 30px;
+        }
+        .tree-level-1 {}
+        .tree-level-2 {}
+    </style>
+`
+    )
+</script>
