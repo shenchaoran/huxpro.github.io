@@ -221,23 +221,33 @@ let promise = new Promise((resolve, reject) => {
         console.log('catch')
     })
 
-Promise.all([
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(1)
-        }, 1000)
-    }),
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(2)
-        }, 200)
-    })
-])
-    .then(console.info)
-    .catch(console.error)
+// Promise.all([
+//     new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(1)
+//         }, 1000)
+//     }),
+//     new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(2)
+//         }, 200)
+//     })
+// ])
+//     .then(console.info)
+//     .catch(console.error)
 
-Promise.map([1,2], v => {
-    return Promise.resolve(v)
-})
-    .then(console.info)
-    .catch(console.error)
+// Promise.map([1,2], v => {
+//     return Promise.resolve(v)
+// })
+//     .then(console.info)
+//     .catch(console.error)
+
+// test for cancel
+new Promise((resolve, reject) => {
+    
+});
+    .then(v => {
+        setTimeout(() => {
+            console.log(v)
+        }, 5000);
+    })
