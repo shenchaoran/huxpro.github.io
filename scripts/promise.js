@@ -243,11 +243,3 @@ let promise = new Promise((resolve, reject) => {
 //     .catch(console.error)
 
 // test for cancel
-new Promise((resolve, reject) => {
-    
-});
-    .then(v => {
-        setTimeout(() => {
-            console.log(v)
-        }, 5000);
-    })

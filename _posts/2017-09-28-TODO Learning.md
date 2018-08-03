@@ -12,7 +12,7 @@ catalog: true
     - [ ] table
     - [ ] float
     - [ ] 布局
-- [ ]JS
+- [ ] JS
     - [ ] Web API
     - [ ] 正则表达式
     - [ ] jQuery源码
@@ -22,6 +22,8 @@ catalog: true
 - [ ] @types:
 - [ ] NodeJS: 
     - [ ] 像angular一样使用依赖注入
+    - [ ] stream
+    - [ ] buffer
 - [ ] angular native
 - [ ] 微信小程序
 - [ ] 服务器：

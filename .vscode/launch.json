@@ -9,6 +9,12 @@
             "request": "launch",
             "name": "launch promise",
             "program": "${workspaceFolder}/scripts/promise.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch observable",
+            "program": "${workspaceFolder}/scripts/observable.js"
         }
     ]
 }
