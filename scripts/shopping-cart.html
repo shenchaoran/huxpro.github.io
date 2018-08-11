@@ -1,0 +1,108 @@
+<style>
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        color: #000000;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    thead {
+        background: #3d444c;
+        color: #ffffff;
+    }
+
+    td,
+    th {
+        border: 1px solid #e1e1e1;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+</style>
+
+<table id="jsTrolley">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>价格</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>产品1</td>
+            <td>10.00</td>
+            <td>
+                <a href="javascript:void(0);">删除</a>
+            </td>
+        </tr>
+        <tr>
+            <td>产品2</td>
+            <td>30.20</td>
+            <td>
+                <a href="javascript:void(0);">删除</a>
+            </td>
+        </tr>
+        <tr>
+            <td>产品3</td>
+            <td>20.50</td>
+            <td>
+                <a href="javascript:void(0);">删除</a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>总计</th>
+            <td colspan="2">60.70(3件商品)</td>
+        </tr>
+    </tfoot>
+</table>
+
+<script>
+    let tbody = document.querySelector('#jsTrolley tbody')
+    function add(items) {
+        let innerHTML = tbody.innerHTML
+        items.forEach(item => {
+            innerHTML += `<tr><td>${item.name}</td><td>${item.price}</td><td><a href="javascript:void(0);">删除</a></td></tr>`
+        })
+        tbody.innerHTML = innerHTML
+        refreshV()
+    }
+
+    function bind() {
+        tbody.addEventListener('click', (e) => {
+            if(e.target.tagName === 'A') {
+                e.target.parentElement.parentElement.remove()
+                refreshV()
+            }
+        })
+    }
+
+    function refreshV() {
+        var sum = Array.from(document.querySelectorAll('#jsTrolley tbody tr td:nth-child(2)')).reduce( (sum, item) => {
+            return sum + parseFloat(item.innerText)
+        }, 0)
+        document.querySelector('#jsTrolley tfoot td').innerHTML = `${sum}(${document.querySelectorAll('#jsTrolley tbody tr').length}件商品)`
+    }
+
+    add([
+        {
+            name: 1,
+            price: 23
+        },
+        {
+            name: 1,
+            price: 23
+        }
+    ])
+    bind()
+</script>

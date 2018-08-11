@@ -11,8 +11,7 @@ catalog: true
 
 
 # CommonJS
-
-- 模块是**同步**加载的，只有所有模块加载完成才会进行后续的操作
+模块是**同步**加载的，只有所有模块加载完成才会进行后续的操作
 
 # AMD: Asynchronous Module Definition
 
@@ -23,5 +22,7 @@ catalog: true
 # CMD: Common Module Definition
 
 ## SeaJS
-
 浏览器端的实现
+
+# ES6 的语法
+静态加载或编译时加载，

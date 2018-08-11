@@ -15,6 +15,20 @@
             "request": "launch",
             "name": "launch observable",
             "program": "${workspaceFolder}/scripts/observable.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch gc",
+            "program": "${workspaceFolder}/scripts/gc.test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch netease test",
+            "program": "${workspaceFolder}/scripts/netease-test.js"
         }
+
+        
     ]
 }

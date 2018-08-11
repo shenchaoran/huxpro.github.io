@@ -14,7 +14,7 @@ catalog: true
 ```
 2. `addEventListener()`
 ``` js
-// 第三个参数：false表示冒泡阶段，true捕捉阶段
+// 第三个参数：false表示冒泡阶段，true捕捉阶段，默认 false
 domObj.addEventListener('click', () => {}, false);
 ```
 3. `attachEvent()`
