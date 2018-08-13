@@ -27,16 +27,22 @@ node.textContent()
 node.parentElement()
 node.appendChild()
 node.removeChild()
+node.innerHTML()
+node.outerHTML()
+node.innerText()    // 块级标签会加换行符
+node.textContent()  // 只把标签去掉，其他格式与原本 html 内容完全相同
+
 // 删除自身
 node.remove()
 node.replaceChild()
 node.cloneNode()
+document.importNode(oldNode, isDeep)
 
 element.getAttribute()
 element.setAttribute()
 element.style[styleName] = ''
 ```
-[attribute 和 property的区别](../../../2018/08/06/Angular之模版语法)
+[attribute 和 property的区别](./2018-08-06-Angular之模版语法.md)
 
 # jQuery DOM 操作
 ```js

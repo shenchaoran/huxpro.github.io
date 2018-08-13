@@ -27,6 +27,12 @@
             "request": "launch",
             "name": "launch netease test",
             "program": "${workspaceFolder}/scripts/netease-test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch toutiao2",
+            "program": "${workspaceFolder}/scripts/toutiao2.js"
         }
 
         
