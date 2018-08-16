@@ -33,6 +33,20 @@
             "request": "launch",
             "name": "launch toutiao2",
             "program": "${workspaceFolder}/scripts/toutiao2.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch readline.test",
+            "program": "${workspaceFolder}/scripts/readline.test.js"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach readline.test",
+            "program": "${workspaceFolder}/scripts/readline.test.js",
+            "port": 12342,
+            "timeout": 600000000
         }
 
         

@@ -91,9 +91,6 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "liyaoli",
-        href: "http://www.liyaoli.com/"
-    },{
         title: "Photography",
         href: "http://15651907312.lofter.com/"
     },{
@@ -101,12 +98,12 @@ friends: [
         href: "http://geomodeling.njnu.edu.cn/GeoModeling/En/home/index.html"
     },{
         title: "Model Integration",
-        href: "http://172.21.213.146:9990/integration/solution/query"
+        href: "http://106.14.78.235:6868/index"
     },{
         title: "Model service container",
-        href: "http://172.21.213.146:8060/index"
+        href: "http://106.14.78.235:8060/index"
     },{
         title: "Data service container",
-        href: "http://172.21.212.85:8899"
+        href: "http://106.14.78.235:8899"
     }
 ]
