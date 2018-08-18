@@ -57,7 +57,7 @@ fs.readFile(fpath, (err, buf) => {
         ```
 
 
-[Node.js Buffer与JavaScript TypeArray类型数组的异同](https://itbilu.com/nodejs/core/NyIjmp0wZ.html)<br>
-[MDN TypedArray](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)<br>
-[TypedArray介绍](http://www.jb51.net/html5/68844.html)
-[使用http模块从后端下载二进制文件](https://blog.csdn.net/davidsu33/article/details/52600906)
+- [Node.js Buffer与JavaScript TypeArray类型数组的异同](https://itbilu.com/nodejs/core/NyIjmp0wZ.html)
+- [MDN TypedArray](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
+- [TypedArray介绍](http://www.jb51.net/html5/68844.html)
+- [使用http模块从后端下载二进制文件](https://blog.csdn.net/davidsu33/article/details/52600906)

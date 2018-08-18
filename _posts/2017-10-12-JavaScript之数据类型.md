@@ -150,4 +150,4 @@ Math.toString(); // "[object Math]"
 ```
 
 # 参考
-[你所忽略的js隐式转换](https://juejin.im/post/5a7172d9f265da3e3245cbca)
+- [你所忽略的js隐式转换](https://juejin.im/post/5a7172d9f265da3e3245cbca)

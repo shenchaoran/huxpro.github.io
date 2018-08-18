@@ -126,5 +126,5 @@ console.log(typeof Object.prototype)   // object
 ```
 
 # 参考
-[MDN 继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)<br>
-[JavaScript深入之从原型到原型链](https://github.com/mqyqingfeng/Blog/issues/2)
+- [MDN 继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- [JavaScript深入之从原型到原型链](https://github.com/mqyqingfeng/Blog/issues/2)

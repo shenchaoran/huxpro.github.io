@@ -47,6 +47,14 @@
             "program": "${workspaceFolder}/scripts/readline.test.js",
             "port": 12342,
             "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach beike.test",
+            "program": "${workspaceFolder}/scripts/beike.test.js",
+            "port": 12342,
+            "timeout": 600000000
         }
 
         

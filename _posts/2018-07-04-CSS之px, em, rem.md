@@ -19,6 +19,6 @@ catalog: true
 **优点：**不会出现像em那样 `1.2em * 1.2em = 1.44em` 的情况出现，因为rem是相对html的font-size设置，而em是相对父元素的font-size。
 
 # 参考
-[CSS 单位 px rem em](https://segmentfault.com/a/1190000010623222)<br>
-[在线单位转换工具](http://pxtoem.com/)
-[在线示例](https://codepen.io/tutsplus/pen/bdxWbB)
+- [CSS 单位 px rem em](https://segmentfault.com/a/1190000010623222)
+- [在线单位转换工具](http://pxtoem.com/)
+- [在线示例](https://codepen.io/tutsplus/pen/bdxWbB)

@@ -37,8 +37,8 @@
 > CSS2.1表格模型中的元素，可能不会全部包含在除HTML之外的文档语言中。这时，那些“丢失”的元素会被模拟出来，从而使得表格模型能够正常工作。所有的表格元素将会自动在自身周围生成所需的匿名table对象，使其符合table/inline-table、table-row、table-cell的三层嵌套关系。
 
 # 参考
-[HTML 4 中的默认样式](https://www.w3.org/TR/CSS2/sample.html)
+- [HTML 4 中的默认样式](https://www.w3.org/TR/CSS2/sample.html)
 
-[css table 布局](http://www.css88.com/archives/6308)
+- [css table 布局](http://www.css88.com/archives/6308)
 
-[css table布局大法，解决你大部分居中、多列等高、左右布局的问题](https://segmentfault.com/a/1190000007007885)
+- [css table布局大法，解决你大部分居中、多列等高、左右布局的问题](https://segmentfault.com/a/1190000007007885)

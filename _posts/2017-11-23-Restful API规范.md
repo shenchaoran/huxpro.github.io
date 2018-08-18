@@ -68,5 +68,5 @@ PATCH  /profile
 
 
 ## 参考文献
-[JSON server readme](https://github.com/typicode/json-server)<br>
-[RESTful 接口设计](https://housanpai.com/articles/3)
+- [JSON server readme](https://github.com/typicode/json-server)
+- [RESTful 接口设计](https://housanpai.com/articles/3)

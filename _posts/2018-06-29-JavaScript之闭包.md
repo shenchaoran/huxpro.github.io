@@ -87,4 +87,4 @@ for (var i = 1; i <= 5; i++) {
 ```
 
 # 参考
-[MDN 闭包](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)
+- [MDN 闭包](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)

@@ -142,5 +142,5 @@ obj.foo();
 # 箭头函数调用
 
 # 参考
-[JavaScript中的this指向](https://segmentfault.com/a/1190000008400124)
-[图解javascript this指向什么？](https://www.cnblogs.com/isaboy/p/javascript_this.html)
+- [JavaScript中的this指向](https://segmentfault.com/a/1190000008400124)
+- [图解javascript this指向什么？](https://www.cnblogs.com/isaboy/p/javascript_this.html)

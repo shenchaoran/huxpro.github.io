@@ -82,4 +82,4 @@ jQuery.extend = jQuery.fn.extend = function(){
 ```
 
 # 参考
-[](http://www.cnblogs.com/aaronjs/p/3278578.html)<br>
+- [](http://www.cnblogs.com/aaronjs/p/3278578.html)

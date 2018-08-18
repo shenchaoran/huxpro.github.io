@@ -42,7 +42,7 @@ element.getAttribute()
 element.setAttribute()
 element.style[styleName] = ''
 ```
-[attribute 和 property的区别](./2018-08-06-Angular之模版语法.md)
+- [attribute 和 property的区别](./2018-08-06-Angular之模版语法.md)
 
 # jQuery DOM 操作
 ```js
