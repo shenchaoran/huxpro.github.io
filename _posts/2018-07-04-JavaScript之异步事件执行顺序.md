@@ -14,10 +14,10 @@ catalog: true
 - MicroTask（微任务）：process.nextTick, Promises(原生的), MutationObserver等。
 - Render Queue（渲染队列）
 
-- 同步任务执行完
-- 去执行 microtasks ，把所有 microtasks queues 清空
-- 取出一个 macrotasks queues 的完成事件，在执行栈执行
-- 再去执行 microtasks
+- 同步任务执行完；
+- 去执行 microtasks ，把所有 microtasks queues 清空；
+- 取出一个 macrotasks queues 的完成事件，在执行栈中执行，期间生成的所有 microTask 插入到微任务队列中；
+- 再去执行 microtasks；
 - ...
 - ...
 - ...

@@ -23,7 +23,7 @@ catalog: true
 null 是一个字面量。
 
 ## undefined
-- not define 和 undefined 不一样，前者表示为定义，后者表示不明确的
+- not define 和 undefined 不一样，前者表示未定义，后者表示不明确的
 ```js
 console.log(asdfasfasdfsadfasdf)    // 报错 not defined
 console.log(window.asdfasdfasfd)    // undefined

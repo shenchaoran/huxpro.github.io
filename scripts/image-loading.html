@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative;
+            height: 0;
+            /* max-width: 100%; */
+            padding-bottom: 100%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* width: 500px; */
+        }
+        /* span {
+            background: beige;
+            display: block;
+            padding-bottom: 100%;
+        } */
+        
+        /* img::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 50% !important;
+            z-index: 100;
+            background: blueviolet;
+            background: url('../img/bgs/contact-bg.jpg') no-repeat center;
+        } */
+
+        #after{
+            background: yellowgreen;
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id='container'>
+        <span></span>
+        <img src="" width="100%">
+    </div>
+    <div id='after'></div>
+</body>
+<script>
+    setTimeout(function() {
+        document.querySelectorAll("img")[0].src = '../img/bgs/landscape-bg.jpg';
+    }, 3000);
+</script>
+ 
+</html>

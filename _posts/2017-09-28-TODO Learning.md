@@ -8,13 +8,15 @@ catalog: true
 2018-07-08 - 2018-07-31: 
 - [ ] css:
     - [ ] grid
-    - [ ] flex
-    - [ ] table
-    - [ ] float
-    - [ ] 布局
+    - [x] flex
+    - [x] table
+    - [x] float
+    - [x] 多列布局
+    - [x] 布局
+- [ ] 动画
 - [ ] JS
     - [ ] Web API
-    - [ ] 正则表达式
+    - [x] 正则表达式
     - [ ] jQuery源码
 - [ ] HTML
     - [ ] H5
@@ -24,6 +26,7 @@ catalog: true
     - [ ] 像angular一样使用依赖注入
     - [ ] stream
     - [ ] buffer
+    - [ ] file
 - [ ] angular native
 - [ ] 微信小程序
 - [ ] 服务器：
@@ -38,3 +41,6 @@ catalog: true
 - [ ] cookie 的安全控制
 - [ ] 7 层网络协议
 - [ ] 数据结构——树
+- [ ] webpack
+- [ ] web 安全
+    - [ ] XSS，SQL注入，CSRF，LFI，命令注入

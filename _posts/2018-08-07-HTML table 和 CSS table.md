@@ -38,7 +38,5 @@
 
 # 参考
 - [HTML 4 中的默认样式](https://www.w3.org/TR/CSS2/sample.html)
-
 - [css table 布局](http://www.css88.com/archives/6308)
-
 - [css table布局大法，解决你大部分居中、多列等高、左右布局的问题](https://segmentfault.com/a/1190000007007885)
