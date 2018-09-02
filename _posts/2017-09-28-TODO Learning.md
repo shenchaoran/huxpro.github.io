@@ -13,11 +13,16 @@ catalog: true
     - [x] float
     - [x] 多列布局
     - [x] 布局
+    - [ ] sass, less
 - [ ] 动画
 - [ ] JS
     - [ ] Web API
     - [x] 正则表达式
     - [ ] jQuery源码
+    - [ ] es6
+        - [x] 装饰器
+- [ ] 移动端开发，ionic
+- [ ] 
 - [ ] HTML
     - [ ] H5
 - [ ] RxJS:

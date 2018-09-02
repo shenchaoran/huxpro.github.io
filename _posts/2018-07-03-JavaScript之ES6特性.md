@@ -6,6 +6,4 @@ tags:
 catalog: true
 ---
 
-
-# let 和 const
-
+![ES6](../img/in-post/es6/ES6.png)
