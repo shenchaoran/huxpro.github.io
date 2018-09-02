@@ -18,7 +18,7 @@ catalog: true
 
 ## 项目构建流程
 
-![](../img/in-post/angular/项目开发流程.png)
+![](/img/in-post/angular/项目开发流程.png)
 
 ## 项目工程结构
 
@@ -29,7 +29,7 @@ catalog: true
     - ...：懒加载
 - shared module
 
-![](../img/in-post/angular/工程结构.png)
+![](/img/in-post/angular/工程结构.png)
 
 ## core module
 
@@ -57,8 +57,8 @@ catalog: true
 
 ## animation
 
-![](../img/in-post/angular/amination/angular动画.png)
-![](../img/in-post/angular/amination/angular动画2.png)
+![](/img/in-post/angular/amination/angular动画.png)
+![](/img/in-post/angular/amination/angular动画2.png)
 
 ## 重新认识Angular
 
@@ -69,11 +69,11 @@ catalog: true
 - useClass
 - useValue
 
-![](../img/in-post/angular/DI.png)
+![](/img/in-post/angular/DI.png)
 
 ### 变化检测
 
-![](../img/in-post/angular/change detection/1.png)
+![](/img/in-post/angular/change detection/1.png)
 
 ### 指令
 
@@ -154,9 +154,9 @@ catalog: true
 - FormGroup
 - FormBuild
 
-![](../img/in-post/angular/表单/响应式表单.png)
+![](/img/in-post/angular/表单/响应式表单.png)
 #### 自定义表单
 
-![](../img/in-post/angular/表单/自定义表单.png)
+![](/img/in-post/angular/表单/自定义表单.png)
 
 ## RxJS

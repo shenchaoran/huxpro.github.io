@@ -20,7 +20,7 @@ c = 22;
 console.log(obj1.name);     //yanniu
 console.log(obj1.age);       //18
 ```
-![](../img/in-post/js/深浅拷贝中的变量存储.png)
+![](/img/in-post/js/深浅拷贝中的变量存储.png)
 
 # 深拷贝和浅拷贝
 **基本类型**拷贝的时候是在栈内存中开辟了新的空间，和被拷贝的元素值相等，因此`基本类型的拷贝都是深拷贝`。

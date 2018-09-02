@@ -8,7 +8,7 @@ catalog: true
 
 
 构造函数、实例对象、原型对象三者的关系通过 __proto__, prototype, new 关联
-![js原型链](../img/in-post/js/js原型链.jpg)
+![js原型链](/img/in-post/js/js原型链.jpg)
 
 # prototype
 每个函数都有一个 prototype 属性，这个属性指向通过该函数创建的***实例**的原型*
@@ -53,7 +53,7 @@ var obj = new Object();
 obj.name = 'Kevin'
 console.log(obj.name) // Kevin
 ```
-![](../img/in-post/js/原型的原型.png)
+![](/img/in-post/js/原型的原型.png)
 
 # 原型链
 那 Object.prototype 的原型呢？null，我们可以打印：
@@ -64,7 +64,7 @@ console.log(Object.prototype.__proto__ === null) // true
 > null 表示“没有对象”，即该处不应该有值。
 
 所以 Object.prototype.__proto__ 的值为 null 跟 Object.prototype 没有原型，其实表达了一个意思。所以查找属性的时候查到 Object.prototype 就可以停止查找了。最后一张关系图也可以更新为：
-![](../img/in-post/js/原型链.png)
+![](/img/in-post/js/原型链.png)
 顺便还要说一下，图中由相互关联的原型组成的链状结构就是原型链，也就是蓝色的这条线。
 
 # 真的是继承吗？
