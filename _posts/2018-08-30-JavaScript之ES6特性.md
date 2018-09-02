@@ -6,4 +6,4 @@ tags:
 catalog: true
 ---
 
-![ES6](../img/in-post/es6/ES6.png)
+![ES6](/img/in-post/es6/ES6.png)
