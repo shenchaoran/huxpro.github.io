@@ -10,7 +10,11 @@ catalog: true
 
 # 基本数据类型
 ## string
+16位 Unicode 字符编码
+
 ## number
+js 的 number 都是按照 64位存储的，但是在位操作时，是先将64位的值转为32位的整数进行位操作，然后结果在转为64位，整个过程64位存储格式是透明的，所以对于开发者来说，就像是只存在32位的整数一样。
+
 ## boolean
 ## object
 ### 对象的深拷贝与浅拷贝
@@ -31,7 +35,7 @@ console.log(window.asdfasdfasfd)    // undefined
 
 ### null 和 undefined 的区别
 1. 语义上的区别
-   - null：表示一个值被定义了，定义为“空值”；
+   - null：表示一个值被定义了，定义为“空值”，或者是“空对象指针”；
    - undefined：表示根本不存在定义。
     
     **所以设置一个值为 null 是合理的**，如
