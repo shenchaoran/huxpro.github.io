@@ -17,6 +17,7 @@
     "scripts": {
         "mystart": "bundle exec jekyll server --watch",
         "debug:readline": "node --inspect=0.0.0.0:12342 scripts/readline.test.js",
+        "debug:matrix": "node --inspect=0.0.0.0:12342 scripts/print-matrix.js",
         "start": "jekyll serve --watch",
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
         "py3view": "cd _site; python3 -m http.server 8020",

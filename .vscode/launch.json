@@ -50,11 +50,11 @@
         },
         {
             "type": "node",
-            "request": "attach",
-            "name": "attach beike.test",
-            "program": "${workspaceFolder}/scripts/beike.test.js",
-            "port": 12342,
-            "timeout": 600000000
+            "request": "launch",
+            "name": "launch matrix",
+            "program": "${workspaceFolder}/scripts/print-matrix.js",
+            // "port": 12342,
+            // "timeout": 600000000
         }
 
         
