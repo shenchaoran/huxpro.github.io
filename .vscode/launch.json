@@ -43,8 +43,8 @@
         {
             "type": "node",
             "request": "attach",
-            "name": "attach readline.test",
-            "program": "${workspaceFolder}/scripts/readline.test.js",
+            "name": "attach beike.anstor",
+            "program": "${workspaceFolder}/scripts/beike.anstor.js",
             "port": 12342,
             "timeout": 600000000
         },
@@ -53,8 +53,16 @@
             "request": "launch",
             "name": "launch matrix",
             "program": "${workspaceFolder}/scripts/print-matrix.js",
-            // "port": 12342,
-            // "timeout": 600000000
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xc:",
+            "program": "${workspaceFolder}/scripts/xc-.js",
+            "port": 12342,
+            "timeout": 600000000
         }
 
         
