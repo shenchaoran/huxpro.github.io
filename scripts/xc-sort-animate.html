@@ -5,27 +5,9 @@
 
     .num-tag {
         border: 1px solid #666;
-        /* margin-right: 3px; */
         padding: 0 5px;
         position: absolute;
         top: 0;
-        transition: all 2s ease;
-    }
-
-    @keyframes moveRight {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(26px);
-        }
-    }
-
-    @keyframes moveLeft {
-        from {}
-        to {
-            transform: translateX(-26px);
-        }
     }
 </style>
 
@@ -37,38 +19,70 @@
     crossorigin="anonymous"></script>
 <script>
     let array = [0, 3, 5, 4, 2, 7, 8, 9, 1, 3]
-    let sorted = [...array]
     let animations = []
-    for (let i = 0; i < sorted.length - 1; i++) {
-        for (let j = 0; j < sorted.length - i - 1; j++) {
-            if (sorted[j] > sorted[j + 1]) {
-                let temp = sorted[j];
-                sorted[j] = sorted[j + 1];
-                sorted[j + 1] = temp;
-                animations.push(j)
+    let expand = array.map((v, i) => {
+        return {
+            val: v,
+            index: i
+        }
+    })
+    for (let i = 0; i < expand.length - 1; i++) {
+        for (let j = 0; j < expand.length - i - 1; j++) {
+            if (expand[j].val > expand[j + 1].val) {
+                animations.push({
+                    toRight: expand[j].index,
+                    toLeft: expand[j + 1].index
+                })
+                let temp = expand[j];
+                expand[j] = expand[j + 1];
+                expand[j + 1] = temp;
             }
         }
     }
+
     let $container = $('#container')
     for (let i = 0; i < array.length; i++) {
         let $node = $(`<span class='num-tag'>${array[i]}</span>`)
         $node.css({
-            left: i*23+(i-1)*3 + 'px'
+            left: i * 26 + 'px'
         })
         $node.appendTo($container)
     }
-    let step=1000
-    $tags = $('.num-tag')
-    // for (let i = 0; i < animations.length; i++) {
-    //     let tmp = array[animations[i]]
-    //     let tmp2 = array[animations[i+1]]
-    //     setTimeout(() => {
-    //         $($tags[animations[i]]).html(tmp2)
-    //         $($tags[animations[i+1]]).html(tmp1)
-            
-    //     }, step*(i+1));
-    // }
-    $($tags[animations[0]]).css({
-        left: '500px'
-    })
+    let step = 300,
+        sleep = 500,
+        $tags = $('.num-tag')
+
+    async function animationPlay(animation) {
+        return new Promise((resolve, reject) => {
+            Promise.all([
+                    new Promise((resolve, reject) => {
+                        $($tags[animation.toRight]).animate({
+                            left: "+=26px"
+                        }, step, 'linear', resolve)
+                    }),
+                    new Promise((resolve, reject) => {
+                        $($tags[animation.toLeft]).animate({
+                            left: '-=26px'
+                        }, step, 'linear', resolve)
+                    })
+                ])
+                .then(v => {
+                    setTimeout(() => {
+                        resolve()
+                    }, sleep);
+                })
+                .catch(e => {
+                    console.log(e)
+                    setTimeout(() => {
+                        resolve()
+                    }, sleep);
+                });
+        });
+    }
+    async function start() {
+        for (let i = 0; i < animations.length; i++) {
+            await animationPlay(animations[i])
+        }
+    }
+    start();
 </script>
