@@ -19,6 +19,7 @@
         "debug:readline": "node --inspect=0.0.0.0:12342 scripts/readline.test.js",
         "debug:matrix": "node --inspect=0.0.0.0:12342 scripts/print-matrix.js",
         "debug:anstor": "node --inspect=0.0.0.0:12342 scripts/beike.anstor.js",
+        "meituan:test": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/meituan/test.js",
         "debug:xc": "node --inspect=0.0.0.0:12342 scripts/xc-.js",
         "start": "jekyll serve --watch",
         "preview": "cd _site; python -m SimpleHTTPServer 8020",

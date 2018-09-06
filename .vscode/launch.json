@@ -58,13 +58,13 @@
         },
         {
             "type": "node",
-            "request": "launch",
-            "name": "launch xc:",
-            "program": "${workspaceFolder}/scripts/xc-.js",
+            "request": "attach",
+            "name": "attach meituan:test",
+            "program": "${workspaceFolder}/scripts/meituan/test.js",
             "port": 12342,
             "timeout": 600000000
         }
-
+        
         
     ]
 }
