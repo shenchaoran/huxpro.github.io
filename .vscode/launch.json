@@ -59,8 +59,16 @@
         {
             "type": "node",
             "request": "attach",
-            "name": "attach meituan:test",
-            "program": "${workspaceFolder}/scripts/meituan/test.js",
+            "name": "attach meituan:1",
+            "program": "${workspaceFolder}/scripts/meituan/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach meituan:2",
+            "program": "${workspaceFolder}/scripts/meituan/2.js",
             "port": 12342,
             "timeout": 600000000
         }
