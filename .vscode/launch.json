@@ -71,6 +71,30 @@
             "program": "${workspaceFolder}/scripts/meituan/2.js",
             "port": 12342,
             "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach huawei:1",
+            "program": "${workspaceFolder}/scripts/huawei/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach huawei:2",
+            "program": "${workspaceFolder}/scripts/huawei/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach huawei:3",
+            "program": "${workspaceFolder}/scripts/huawei/3.js",
+            "port": 12342,
+            "timeout": 600000000
         }
         
         
