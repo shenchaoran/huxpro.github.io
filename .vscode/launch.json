@@ -136,5 +136,29 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach jd:1",
+            "program": "${workspaceFolder}/scripts/jd/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach jd:2",
+            "program": "${workspaceFolder}/scripts/jd/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach jd:3",
+            "program": "${workspaceFolder}/scripts/jd/3.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
