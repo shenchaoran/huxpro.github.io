@@ -95,8 +95,46 @@
             "program": "${workspaceFolder}/scripts/huawei/3.js",
             "port": 12342,
             "timeout": 600000000
-        }
-        
-        
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach toutiao:3-1",
+            "program": "${workspaceFolder}/scripts/toutiao/3-1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach toutiao:3-2",
+            "program": "${workspaceFolder}/scripts/toutiao/3-2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach toutiao:3-3",
+            "program": "${workspaceFolder}/scripts/toutiao/3-3.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach toutiao:3-4",
+            "program": "${workspaceFolder}/scripts/toutiao/3-4.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach toutiao:3-5",
+            "program": "${workspaceFolder}/scripts/toutiao/3-5.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
