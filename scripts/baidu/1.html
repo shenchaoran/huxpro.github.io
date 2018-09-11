@@ -1,0 +1,106 @@
+
+<style>
+.search{
+    position: relative;
+}
+.js-input{
+    width: 450px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.js-suggest{
+    width: 466px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 39px;
+}
+.js-suggest.hide{
+    display: none;
+}
+.js-suggest ul{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.js-suggest ul li{
+    color: #000;
+    font: 14px arial;
+    line-height: 25px;
+    padding: 0 8px;
+    position: relative;
+    cursor: default;
+}
+.js-suggest ul li:hover{
+    background: #f0f0f0;
+}
+</style>
+<div class="search">
+    <div><input type="text" class="js-input" value="的"></div>
+    <div class="js-suggest">
+        <ul>
+            <li>根据输入框的值</li>
+            <li>从给定字符串数组中筛选出匹配的数据，依次显示在li节点中</li>
+            <li>如果没有匹配的数据，请移除所有li节点，并隐藏.js-suggest节点</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+function suggest(items) {
+    var container = document.getElementsByClassName('js-suggest')[0];
+    var ul = container.children[0];
+    if(items.length === 0) {
+        container.className = 'js-suggest hide';
+        ul.innerHTML = ''
+        return;
+    }
+    var rsts = getMatched(items);
+    
+    if(rsts.length === 0) {
+        container.className = 'js-suggest hide';
+        ul.innerHTML = ''
+        return;
+    }
+    else {
+        container.className = 'js-suggest';
+        var inner = ''
+        for(var i=0;i <rsts.length; i++) {
+            inner += '<li>' + rsts[i] + '</li>';
+        }
+        ul.innerHTML = inner;
+    }
+}
+
+function getMatched(items) {
+    var rsts = []
+    var inputStr = document.getElementsByClassName('js-input')[0].value;
+    inputStr = inputStr.replace(/^\s+|\s+$/, '')
+    var subs = inputStr.split('')
+    var regStr = ''
+    for(var i=0; i< subs.length; i++) {
+        regStr += subs[i] + '.*?'
+    }
+    if(subs.length ===0 ) {
+        
+        return [];
+    }
+    var reg = new RegExp(regStr);
+    for(var j=0;j<items.length; j++) {
+        if(reg.test(items[j])) {
+            rsts.push(items[j])    
+        }
+    }
+    return rsts;
+}
+
+var v = ['不匹配数据', '根据输入框的值', '从给定字符串数组中筛选出匹配的数据，依次显示在li节点中', '如果没有匹配的数据，请移除所有li节点，并隐藏.js-suggest节点'];
+suggest(v)
+</script>

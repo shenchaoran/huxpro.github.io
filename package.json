@@ -40,6 +40,8 @@
         "toutiao:3-5": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/toutiao/3-5.js",
         "jd:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/jd/1.js",
         "jd:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/jd/2.js",
+        "baidu:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/baidu/1.js",
+        "baidu:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/baidu/2.js",
         "xiecheng:1": "node --inspect=0.0.0.0:12342 scripts/xc-.js"
     },
     "dependencies": {
