@@ -176,5 +176,21 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xunlei:1",
+            "program": "${workspaceFolder}/scripts/xunlei/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xunlei:2",
+            "program": "${workspaceFolder}/scripts/xunlei/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
