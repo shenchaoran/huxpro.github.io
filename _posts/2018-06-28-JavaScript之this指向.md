@@ -15,6 +15,21 @@ catalog: true
 
 ![](/img/in-post/js/js-this.jpg)
 
+# 作为对象方法调用
+```js
+var obj = {
+    a: 1,
+    b: {
+        a: 2,
+        fn: function() {
+            console.log(this.a)
+        }
+    }
+}
+obj.b.fn()
+// a
+```
+
 # 直接调用
 这里需要注意的一点是，直接调用并不是指在全局作用域下进行调用，在任何作用域下，直接通过 `函数名(...)` 来对函数进行调用的方式，都称为直接调用。
 ```

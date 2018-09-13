@@ -1,0 +1,30 @@
+<style>
+    .parent{
+        background: pink;
+        margin: 5px 0;
+    }
+    .child {
+        background: greenyellow;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        /* display: inline-block; */
+    }
+    .child:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .parent:nth-child(1) {
+        /* float: left; */
+    }
+</style>
+
+<div class='parent'>
+    <div class='child'>child1</div>
+    <div class='child'>child2</div>
+</div>
+
+<div class='parent'>
+    <div class='child'>child1</div>
+    <div class='child'>child2</div>
+</div>
