@@ -21,6 +21,7 @@ catalog: true
     - [ ] jQuery源码
     - [x] es6
         - [x] 装饰器
+    - [ ] 设计模式
 - [ ] 移动端开发，ionic
 - [ ] HTML
     - [ ] H5
@@ -60,3 +61,4 @@ catalog: true
 - [ ] 前端工程化
 - [ ] 性能优化
 - [ ] SEO
+- [ ] 
