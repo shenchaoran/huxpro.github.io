@@ -21,9 +21,13 @@ catalog: true
     - [ ] jQuery源码
     - [x] es6
         - [x] 装饰器
+    - [ ] 设计模式
 - [ ] 移动端开发，ionic
 - [ ] HTML
     - [ ] H5
+        - [ ] canvas
+        - [ ] svg
+    - [ ] 各种 width, height 的关系
 - [ ] RxJS:
 - [ ] @types:
 - [ ] NodeJS: 
@@ -41,12 +45,20 @@ catalog: true
     - [ ] webRtc
     - [ ] graphql
     - [ ] webSocket
-- [ ] http 缓存
-- [ ] cookie 的安全控制
+- [ ] http cache
+- [ ] http 2.0
+- [ ] tcp
 - [ ] 7 层网络协议
+- [ ] cookie 的安全控制
 - [ ] 数据结构——树
+- [ ] 数据结构——图
 - [ ] webpack
+    - [ ] 压缩
+- [ ] glup
 - [ ] web 安全
     - [ ] XSS，SQL注入，CSRF，LFI，命令注入
 - [ ] 邮件协议、MAC协议、ARP协议
 - [ ] 前端工程化
+- [ ] 性能优化
+- [ ] SEO
+- [ ] 
