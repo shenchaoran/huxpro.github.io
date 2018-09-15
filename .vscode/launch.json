@@ -182,5 +182,19 @@
             "name": "launch jianzhi-offer:35",
             "program": "${workspaceFolder}/scripts/jianzhi-offer/35.js"
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xunlei:1",
+            "program": "${workspaceFolder}/scripts/xunlei/1.js",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xunlei:2",
+            "program": "${workspaceFolder}/scripts/xunlei/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
