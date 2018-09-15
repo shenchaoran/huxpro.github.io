@@ -44,6 +44,8 @@
         "baidu:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/baidu/2.js",
         "xunlei:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xunlei/1.js",
         "xunlei:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xunlei/2.js",
+        "aiqiyi:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/aiqiyi/1.js",
+        "aiqiyi:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/aiqiyi/2.js",
         "xiecheng:1": "node --inspect=0.0.0.0:12342 scripts/xc-.js"
     },
     "dependencies": {

@@ -196,5 +196,13 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach aiqiyi:2",
+            "program": "${workspaceFolder}/scripts/aiqiyi/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
