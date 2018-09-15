@@ -176,5 +176,11 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch jianzhi-offer:35",
+            "program": "${workspaceFolder}/scripts/jianzhi-offer/35.js"
+        },
     ]
 }
