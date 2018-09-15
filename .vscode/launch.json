@@ -204,5 +204,37 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach weipinhui:1",
+            "program": "${workspaceFolder}/scripts/weipinhui/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach weipinhui:2",
+            "program": "${workspaceFolder}/scripts/weipinhui/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach xinlang:1",
+            "program": "${workspaceFolder}/scripts/xinlang/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach xinlang:2",
+            "program": "${workspaceFolder}/scripts/xinlang/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
