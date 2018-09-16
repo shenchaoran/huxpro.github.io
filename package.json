@@ -50,6 +50,9 @@
         "weipinhui:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/weipinhui/2.js",
         "xinlang:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xinlang/1.js",
         "xinlang:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xinlang/2.js",
+        "tencent:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/tencent/1.js",
+        "tencent:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/tencent/2.js",
+        "tencent:3": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/tencent/3.js",
         "xiecheng:1": "node --inspect=0.0.0.0:12342 scripts/xc-.js"
     },
     "dependencies": {

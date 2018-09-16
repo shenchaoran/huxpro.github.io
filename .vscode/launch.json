@@ -236,5 +236,29 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach tencent:1",
+            "program": "${workspaceFolder}/scripts/tencent/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach tencent:2",
+            "program": "${workspaceFolder}/scripts/tencent/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach tencent:3",
+            "program": "${workspaceFolder}/scripts/tencent/3.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
