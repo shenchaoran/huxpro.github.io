@@ -14,7 +14,7 @@ catalog: true
     - [x] 多列布局
     - [x] 布局
     - [x] sass, less
-- [ ] 动画
+    - [ ] 动画原理
 - [ ] JS
     - [ ] Web API
     - [x] 正则表达式
@@ -45,8 +45,10 @@ catalog: true
     - [ ] webRtc
     - [ ] graphql
     - [ ] webSocket
-- [ ] http cache
-- [ ] http 2.0
+- [ ] http
+    - [ ] http 权威指南
+    - [ ] http 2.0
+    - [ ] http cache
 - [ ] tcp
 - [ ] 7 层网络协议
 - [ ] cookie 的安全控制
@@ -61,4 +63,6 @@ catalog: true
 - [ ] 前端工程化
 - [ ] 性能优化
 - [ ] SEO
-- [ ] 
+- [ ] 职业规划
+- [ ] 前端模块化
+- [ ] dnd
