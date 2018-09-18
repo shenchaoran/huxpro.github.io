@@ -260,5 +260,21 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach didi:1",
+            "program": "${workspaceFolder}/scripts/didi/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach didi:2",
+            "program": "${workspaceFolder}/scripts/didi/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
