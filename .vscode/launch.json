@@ -276,5 +276,27 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach yitu:1",
+            "program": "${workspaceFolder}/scripts/yitu/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach xiaomi:1",
+            "program": "${workspaceFolder}/scripts/xiaomi/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch xiaomi:2",
+            "program": "${workspaceFolder}/scripts/xiaomi/2.js"
+        },
     ]
 }

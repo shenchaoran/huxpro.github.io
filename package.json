@@ -55,6 +55,9 @@
         "tencent:3": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/tencent/3.js",
         "didi:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/didi/1.js",
         "didi:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/didi/2.js",
+        "yitu:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/yitu/1.js",
+        "xiaomi:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xiaomi/1.js",
+        "xiaomi:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/xiaomi/2.js",
         "xiecheng:1": "node --inspect=0.0.0.0:12342 scripts/xc-.js"
     },
     "dependencies": {
