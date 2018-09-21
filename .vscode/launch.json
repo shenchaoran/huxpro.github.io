@@ -298,5 +298,21 @@
             "name": "launch xiaomi:2",
             "program": "${workspaceFolder}/scripts/xiaomi/2.js"
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach bilibili:1",
+            "program": "${workspaceFolder}/scripts/bilibili/1.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach bilibili:2",
+            "program": "${workspaceFolder}/scripts/bilibili/2.js",
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
