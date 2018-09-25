@@ -314,5 +314,18 @@
             "port": 12342,
             "timeout": 600000000
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch express:middleware",
+            "program": "${workspaceFolder}/scripts/express/middleware.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch class:extends",
+            "program": "${workspaceFolder}/scripts/class/extends.js",
+            "args": ["--harmony"]
+        },
     ]
 }

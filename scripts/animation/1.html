@@ -1,0 +1,42 @@
+<style>
+#container {
+    position: relative;
+}
+#child{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: rectMove 4s 0s infinite;
+}
+@keyframes rectMove {
+    from{
+        left: 0;
+        top: 0;
+        background: red;
+    }
+    25% {
+        left: 300px;
+        top: 0;
+        background: blue;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background: gray;
+    }
+    75% {
+        left: 0;
+        top: 300px;
+        background: green;
+    }
+    to {
+        left: 0;
+        top: 0;
+        background: red;
+    }
+}
+</style>
+
+<div id='container'>
+    <div id='child'></div>
+</div>
