@@ -49,24 +49,24 @@ class Promise {
     then(fulfilled, rejected) {
         fulfilled = typeof fulfilled === 'function'? fulfilled: fulfilled => fulfilled
         rejected = typeof rejected === 'function'? rejected: rejected => { throw rejected }
-        
+
         function resolvePromise(promise2, x, resolve, reject) {
             if(x && x === promise2) {
                 return reject(new Error('循环调用，堆栈溢出'))
             }
-            let called = false
+            // let called = false
             if(x && (typeof x === 'object' || typeof x === 'function')) {
                 let then = x.then
                 try{
                     if(typeof then === 'function') {
                         // x 是 promise
-                        then.call(x, fulfilled2 => {
-                            if(called) return
-                            called = true
+                        x.then(fulfilled2 => {
+                            // if(called) return
+                            // called = true
                             resolvePromise(promise2, fulfilled2, resolve, reject)
                         }, rejected2 => {
-                            if(called) return
-                            called = true
+                            // if(called) return
+                            // called = true
                             reject(rejected2)
                         })
                     }
@@ -200,19 +200,21 @@ let promise = new Promise((resolve, reject) => {
 
         // return 普通值
         // return 2
-        return Promise.reject(2)
+        // return Promise.reject(2)
 
         // return promise 而且可能是promise嵌套的情况，此时要拿到最内层 promsie resolve 的值
-        // return new Promise((resolve, reject) => {
-        //     return new Promise((resolve2, reject2) => {
-        //         setTimeout(() => {
-        //             resolve2(2)
-        //         }, 0);
-        //     })
-        //         .then(v => {
-        //             resolve(v)
-        //         })
-        // })
+        return new Promise((resolve, reject) => {
+            return new Promise((resolve2, reject2) => {
+                setTimeout(() => {
+                    resolve2(2)
+                }, 0);
+            })
+                .then(v => {
+                    return new Promise(() => {
+                        resolve(v)
+                    })
+                })
+        })
     })
     .then(v => {
         console.log('onThen 2', v)
@@ -221,25 +223,25 @@ let promise = new Promise((resolve, reject) => {
         console.log('catch')
     })
 
-// Promise.all([
-//     new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve(1)
-//         }, 1000)
-//     }),
-//     new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve(2)
-//         }, 200)
-//     })
-// ])
-//     .then(console.info)
-//     .catch(console.error)
+// // Promise.all([
+// //     new Promise((resolve, reject) => {
+// //         setTimeout(() => {
+// //             resolve(1)
+// //         }, 1000)
+// //     }),
+// //     new Promise((resolve, reject) => {
+// //         setTimeout(() => {
+// //             resolve(2)
+// //         }, 200)
+// //     })
+// // ])
+// //     .then(console.info)
+// //     .catch(console.error)
 
-// Promise.map([1,2], v => {
-//     return Promise.resolve(v)
-// })
-//     .then(console.info)
-//     .catch(console.error)
+// // Promise.map([1,2], v => {
+// //     return Promise.resolve(v)
+// // })
+// //     .then(console.info)
+// //     .catch(console.error)
 
-// test for cancel
+// // test for cancel

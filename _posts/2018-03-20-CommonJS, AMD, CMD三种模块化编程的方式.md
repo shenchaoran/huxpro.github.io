@@ -55,6 +55,7 @@ define(function(require, exports, module) {
 - 静态加载或编译时加载
 - ES6的模块导出的不管是原始值还是对象，都是引用
 - 导入的变量是动态只读的，动态表示被引用模块中的值发生了变化，引用文件中也会发生变化，只读表示在引用模块中不能改变被引用模块中的值。
+- ES6 的模块有 tree shaking：一处JS上下文中未引用的代码
 
 # SystemJS
 通用模块加载器，支持AMD、CommonJS、ES6等各种格式的JS模块加载，也是Angular2官推的加载器。
