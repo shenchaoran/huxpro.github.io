@@ -1,0 +1,62 @@
+<style>
+    #container {
+        position: relative;
+        width: 1000px;
+        height: 1000px;
+        border: 1px solid #777;
+    }
+    #ball {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: greenyellow;
+    }
+</style>
+
+<div id='container'>
+    <div id='ball'></div>
+</div>
+
+<script>
+    var ball = document.getElementById('ball');
+    //    每秒最多60帧；
+    var timeStep = 1000/60;
+    //    方向角
+    var alpha = Math.random()*360 / 2 / Math.PI;
+    //    水平或垂直位移/每帧
+    var v = 300;
+    var vx = v / 60 * Math.cos(alpha);
+    var vy = v / 60 * Math.sin(alpha);
+    //    位移方向是正向还是反向
+    var vxDir = 1;
+    var vyDir = 1;
+    //    起点
+    var startX = Math.random() * 1000;
+    var startY = Math.random() * 1000;
+
+    var render = (x, y) => {
+        ball.style.left = x + 'px';
+        ball.style.top = y + 'px';
+    }
+    var toX = () => {
+        var currentX = ball.style.left.slice(0, -2);
+        return +currentX + vxDir * vx;
+    }
+    var toY = () => {
+        var currentY = ball.style.top.slice(0, -2);
+        return +currentY + vyDir * vy;
+    }
+    render(startX, startY);
+
+    setInterval(() => {
+        if (toX() < 0 || toX() > 1000) {
+            vxDir = -vxDir;
+        }
+        if (toY() < 0 || toY() > 1000) {
+            vyDir = -vyDir;
+        }
+        console.log(toX(), toY());
+        render(toX(), toY());
+    }, timeStep);
+</script>
