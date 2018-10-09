@@ -327,5 +327,14 @@
             "program": "${workspaceFolder}/scripts/class/extends.js",
             "args": ["--harmony"]
         },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach yidian:1",
+            "program": "${workspaceFolder}/scripts/yidianzixun/1.js",
+            "args": ["--harmony"],
+            "port": 12342,
+            "timeout": 600000000
+        },
     ]
 }
