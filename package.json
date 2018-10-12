@@ -74,6 +74,7 @@
         "bilibili:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/bilibili/1.js",
         "bilibili:2": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/bilibili/2.js",
         "wanmei:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/wanmei/1.js",
+        "yidian:1": "node --stack-size=65500 --inspect=0.0.0.0:12342 scripts/yidianzixun/1.js",
         "xiecheng:1": "node --inspect=0.0.0.0:12342 scripts/xc-.js"
     },
     "dependencies": {
