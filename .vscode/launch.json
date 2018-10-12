@@ -327,5 +327,40 @@
             "program": "${workspaceFolder}/scripts/class/extends.js",
             "args": ["--harmony"]
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch horse-cheese",
+            "program": "${workspaceFolder}/scripts/DFS/horse-cheese.js",
+            "args": ["--harmony"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch jianzhi-offer:path-in-matrix",
+            "program": "${workspaceFolder}/scripts/jianzhi-offer/path-in-matrix.js",
+            "args": ["--harmony"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch leetcode:52-N-Queens",
+            "program": "${workspaceFolder}/scripts/leetcode/52-N-Queens.js",
+            "args": ["--harmony"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch leetcode:39-Combination-Sum",
+            "program": "${workspaceFolder}/scripts/leetcode/39-Combination-Sum.js",
+            "args": ["--harmony"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "launch permutation",
+            "program": "${workspaceFolder}/scripts/permutation.js",
+            "args": ["--harmony"]
+        },
     ]
 }

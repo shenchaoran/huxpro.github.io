@@ -1,3 +1,5 @@
+// 走迷宫
+// 用stack模拟dfs，避免递归
 var readline = require('readline');
 process.stdin.setEncoding('utf-8');
 
@@ -5,28 +7,28 @@ var rl = readline.createInterface({ input: process.stdin, output: process.stdout
 rl.prompt();
 let matrix = []
 let totolLine = 0
-let col, row;
+let startX, startY;
 rl.on('line', function(token) {
     if(totolLine <= 9) {
         matrix.push(token.split(''))
     }
     else if(totolLine === 10) {
-        col = parseInt(token)
+        startX = parseInt(token)
     }
     else if(totolLine === 11){
-        row = parseInt(token)
+        startY = parseInt(token)
         getRst()
 
         totolLine = 0;
         matrix = [];
-        row = col = null;
+        startY = startX = null;
     }
     totolLine++
 });
 
 var getRst = () => {
     let stack = []
-    stack.push([row, col])
+    stack.push([startY, startX])
     while(stack.length) {
         let curr = stack.pop()
         let x = curr[0]
