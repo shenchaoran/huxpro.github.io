@@ -56,7 +56,7 @@ catalog: true
 - [ ] 数据结构——图
 - [ ] webpack
     - [ ] 压缩
-- [ ] glup
+- [x] glup
 - [ ] web 安全
     - [ ] XSS，SQL注入，CSRF，LFI，命令注入
 - [ ] 邮件协议、MAC协议、ARP协议
@@ -66,3 +66,6 @@ catalog: true
 - [ ] 职业规划
 - [ ] 前端模块化
 - [ ] dnd
+- [ ] MongoDB 设计
+    - [ ] 自动解引用
+    - [ ] 1对1，1对许多，1对非常多
