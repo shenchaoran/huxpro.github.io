@@ -156,6 +156,9 @@ obj.foo();
 
 # 箭头函数调用
 
+# bug
+- 在使用 jquery-ui 时，用了箭头函数，导致 this 指向出错。参考[这里](https://stackoverflow.com/questions/36638002/jquery-each-function-with-es6-arrow-functions)
+
 # 参考
 - [JavaScript中的this指向](https://segmentfault.com/a/1190000008400124)
 - [图解javascript this指向什么？](https://www.cnblogs.com/isaboy/p/javascript_this.html)

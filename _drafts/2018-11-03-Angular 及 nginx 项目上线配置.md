@@ -105,6 +105,9 @@ http {
 }
 ```
 
+# geoserver 配置
+WFS 返回 JSON 配置模板（[参考](https://blog.csdn.net/mengdong_zy/article/details/51787799)）
+
 # 参考
 - [Nginx正则表达式](https://blog.csdn.net/xinzhifu1/article/details/59540505)
 - [nginx正则说明](https://blog.csdn.net/gzh0222/article/details/7845981)

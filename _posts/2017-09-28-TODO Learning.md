@@ -19,6 +19,7 @@ catalog: true
     - [ ] Web API
     - [x] 正则表达式
     - [ ] jQuery源码
+        - [ ] jQuery ui 源码
     - [x] es6
         - [x] 装饰器
     - [ ] 设计模式
