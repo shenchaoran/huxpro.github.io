@@ -73,7 +73,7 @@ catalog: true
 
 ### 变化检测
 
-![](/img/in-post/angular/change detection/1.png)
+![](/img/in-post/angular/change-detection/1.png)
 
 ### 指令
 

@@ -14,7 +14,7 @@ catalog: true
     - [x] 多列布局
     - [x] 布局
     - [x] sass, less
-    - [ ] 动画原理
+    - [x] 动画原理
 - [ ] JS
     - [ ] Web API
     - [x] 正则表达式
@@ -23,7 +23,10 @@ catalog: true
     - [x] es6
         - [x] 装饰器
     - [ ] 设计模式
-- [ ] 移动端开发，ionic
+- [ ] 移动端开发
+  - [ ] ionic
+  - [ ] React native
+  - [ ] 小程序
 - [ ] HTML
     - [ ] H5
         - [ ] canvas
