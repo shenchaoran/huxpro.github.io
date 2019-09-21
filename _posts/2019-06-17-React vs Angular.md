@@ -1,0 +1,7 @@
+- 组件嵌套消息传递：
+  - React：把 handleFunction 作为 prop 传给子组件
+  - Angular：子组件 emit event
+- 路由：
+  - React：xml/html 路由组件配置
+  - Angular：json 配置
+- 
