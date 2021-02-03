@@ -96,6 +96,6 @@ Layer.prototype.handle_error = function handle_error(error, req, res, next) {
 ```
 
 ##### 用法：
-- next(): 跳到下一个中间件
-- next('route'): 跳到下个路由器
+- next(): 跳到下一个`中间件`
+- next('route'): 跳到下个`路由器`
 - next(error: Error): 跳到错误处理中间件
